@@ -13,12 +13,14 @@
 
 */
 
+/* Underneath I have set the page's background image, it's size, and I have also set it to fixed so that it doesn't scroll when the user scrolls down the page. */
 /* HTML Styles */
 html {
     background: url(sd_back1.png) fixed;
     background-size: 100%;
 }
 
+/* In the chunk of code below, I have created the four white radial gradients that appear as while blobs and have also inserted the content background image behind the blob. Finally, I have also changed the look of one of the headers by changing it's color and "fuzzing" it up a bit. */
 /* Body Styles */
 body {
     background: url(sd_back2.png), radial-gradient(circle closest-corner at 40% 70%, white 15%, rgba(151, 151, 151, 0.5)50%), radial-gradient(circle closest-corner at 80% 40%, white 15%, rgba(0, 0, 0, 0)30%), radial-gradient(circle closest-side at 10% 20%, white 20%, rgba(0, 0, 0, 0)45%), radial-gradient(5% 5% at 90% 10%, white 15%, rgba(0, 0, 0, 0)40%);
@@ -26,11 +28,13 @@ body {
     box-shadow: rgb(31, 31, 31) 30px 0px 45px, rgb(31, 31, 31) -30px 0px 45px;
 }
 
+/* In the Nav styles, I have added a purple/lilac/lavender-esque outline around the nav.*/
 /* Navigation List Styles */
 body>header a {
     border: outset 5px rgb(211, 211, 255);
 }
 
+/* Underneath, I have changed the color of the list headers to a very, very pale red and given them a blurry "fuzzy" look. I have also added a filter to the portrait of messier to make it look "faded" and flipped it. */
 /* Section Left Styles */
 h1 {
     color: rgb(211, 211, 211);
@@ -38,7 +42,13 @@ h1 {
 }
 
 #mportrait {
-    -webkit-filter:
+    -webkit-filter: drop-shadow(-15px 0px 5px rgba(51, 51, 51, 0.9))grayscale(0.7) opacity(0.6);
+    filter: drop-shadow(-15px 0px 5px rgba(51, 51, 51, 0.9) grayscale(0.7) opacity(0.6));
+    transform: rotateY(180deg);
 }
 
+/* Finally, in the line of code underneath I have added a seperating line from the footer and the body. */
 /* Footer Styles */
+footer {
+    border-top: solid 2px rgb(171, 171, 171);
+}
